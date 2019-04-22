@@ -232,7 +232,7 @@
                 </div>
             </div>
         </div>
-      
+      <img id="img1" style= "width:100%;" src="" alt="">
 
     </div>
     <input class="btn" id="#btn" type="button" value="截图" onclick="takescreen()">
@@ -242,11 +242,12 @@
     function takescreen(){
         html2canvas(document.querySelector("#view")).then(canvas => {
             console.log(canvas)
-            document.body.appendChild(canvas)
+            // document.body.appendChild(canvas)
                 //将canvas画布放大若干倍，然后盛放在较小的容器内，就显得不模糊了
                 var timestamp = Date.parse(new Date());
                 //把截取到的图片替换到a标签的路径下载  
-                $("#down1").attr('href',canvas.toDataURL('image/jpeg'));  
+                $("#down1").attr('href',canvas.toDataURL('image/png')); 
+                $('#img1').attr('src',canvas.toDataURL('image/png') ) 
                 //下载下来的图片名字  
                 $("#down1").attr('download',timestamp + '.png') ;
                 alert('请下载')   
