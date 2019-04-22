@@ -94,9 +94,7 @@
    .f_label{
        border-left:3px solid #585858;
    }
-   .travel{
-       margin-top:10px;
-   }
+  
    .btn{
        margin-top:10px;
        width:100%;
@@ -127,7 +125,10 @@
    .opera>div img{
        margin-right:10px;
    }
-   .tab,.travel{
+   .travel{
+       padding:0 10px;
+   }
+   .tab{
     padding:10px;;
    
    }
@@ -182,7 +183,7 @@
                 </div>
                 <div class="label_b">
                     <span>到达时间</span>
-                    <p><input  type="text"></p>
+                    <p><input value="08:30" type="text"></p>
                 </div>
             </div>
             <div class="label_s label t">
@@ -192,7 +193,7 @@
                 </div>
                 <div class="label_b">
                     <span>离开时间</span>
-                    <p><input  type="text"></p>
+                    <p><input value="21:00" type="text"></p>
                 </div>
             </div>
             <div class="label">
@@ -251,16 +252,16 @@
                 </div>
                 <div class="label_b">
                         <p>浏览行程:</p>
-                        <div contentEditable='true'></div>
+                        <div contentEditable='true'>汉阳陵 乾陵懿德太子墓 法门寺</div>
                     </div>
             </div>
-            <div class="label_s label t">
+            <!-- <div class="label_s label t">
                 <div class="label_b">
                     <span>第二天</span>
                 </div>
                 <div class="label_b">
                     <p>浏览行程:</p>
-                    <div contentEditable='true'></div>
+                    <div contentEditable='true'>乾陵 法门寺</div>
                 </div>
             </div>
             <div class="label_s label t">
@@ -269,15 +270,14 @@
                 </div>
                 <div class="label_b">
                         <p>浏览行程:</p>
-                        <div contentEditable='true'></div>
+                        <div contentEditable='true'>城墙 兵马俑 华清池骊山</div>
                     </div>
-            </div>
+            </div> -->
         </div>
       <img id="img1" style= "width:100%;" src="" alt="">
 
     </div>
     <input class="btn" id="#btn" type="button" value="截图" onclick="takescreen()">
-    <a class="btn" id="down1" class="down" href="" download="downImg" >截图下载</a>
 </body>
 <script>
     function takescreen(){
