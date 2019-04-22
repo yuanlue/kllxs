@@ -242,6 +242,7 @@
     function takescreen(){
         html2canvas(document.querySelector("#view")).then(canvas => {
             console.log(canvas)
+            document.body.appendChild(canvas)
                 //将canvas画布放大若干倍，然后盛放在较小的容器内，就显得不模糊了
                 var timestamp = Date.parse(new Date());
                 //把截取到的图片替换到a标签的路径下载  
