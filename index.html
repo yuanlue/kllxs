@@ -33,6 +33,9 @@
    .label_s{
        justify-content: space-between;
    }
+   .label .label_b:first-child{
+       width:60%;
+   }
    .label_b{
        
        display: flex;
@@ -47,6 +50,12 @@
    }
    .label_b>p{
        margin-left:10px;
+   }
+   .t .label_b>p{
+       display: flex;
+   } 
+   .t .label_b>p input{
+       width:100px;
    }
 </style>
 
@@ -75,7 +84,7 @@
                 <span>出发地点</span>
                 <p><input type="text"></p>
             </div>
-            <div class="label_s label">
+            <div class="label_s label t">
                 <div class="label_b">
                     <span>到达日期</span>
                     <p><input type="date"></p>
