@@ -295,10 +295,10 @@
     <input class="btn" id="#btn" type="button" value="截图" onclick="takescreen()">
 </body>
 <script>
-    var random = Math.random() * 100000
+    var random = Math.floor(Math.random () * 90000) + 10000;
    $('.mm span').text(parseInt(random))
     function takescreen(){
-        var random = Math.random() * 100000
+        var random = Math.floor(Math.random () * 90000) + 10000;
    $('.mm span').text(parseInt(random))
         html2canvas(document.querySelector("#view")).then(canvas => {
             console.log(canvas)
